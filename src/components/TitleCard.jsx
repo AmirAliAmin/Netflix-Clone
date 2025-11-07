@@ -121,7 +121,7 @@ export default function TitleCard({ title, category }) {
                 alt={selectedCard.title}
                 className="w-full h-48 object-fit rounded-lg"
               />
-              <p className="absolute top-40 right-auto hover:text-[#E50914] cursor-pointer font-extrabold text-5xl" onClick={()=>navigate(`player/${selectedCard.id}`)}><FaRegCirclePlay /></p>
+              <p className="absolute top-40 right-40 lg:right-75 hover:text-[#E50914] cursor-pointer font-extrabold text-5xl" onClick={()=>navigate(`player/${selectedCard.id}`)}><FaRegCirclePlay /></p>
               <h1 className="text-2xl font-bold text-[#E50914]">{selectedCard.title}</h1>
               <p className=" leading-relaxed">{selectedCard.overview.slice(0,160)} <span>...</span></p>
               <div className="flex flex-wrap gap-6 text-sm ">
